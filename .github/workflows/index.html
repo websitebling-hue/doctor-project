@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shailya Gupta | Dermatologist & Skin Specialist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #d4a373; /* Sophisticated Gold/Tan */
+            --primary-bg: #fffafa; /* Soft Rose White */
+            --text-main: #2d3436;
+            --medical-blue: #0984e3;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text-main); line-height: 1.6; background-color: #fff; overflow-x: hidden; }
+
+        /* Navigation */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 10%; background: #fff; position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+        }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--accent); }
+        .nav-links { display: flex; list-style: none; gap: 30px; }
+        .nav-links a { text-decoration: none; color: #555; font-weight: 500; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            display: flex; align-items: center; padding: 80px 10%; min-height: 85vh;
+            background: linear-gradient(135deg, #fff 60%, #fdf2f2 100%);
+        }
+        .hero-text { flex: 1; padding-right: 50px; }
+        .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; color: #1a1a1a; }
+        .hero-text p { font-size: 1.1rem; color: #636e72; margin-bottom: 30px; max-width: 500px; }
+        
+        .hero-image { flex: 1; position: relative; text-align: center; }
+        .profile-img {
+            width: 400px; height: 400px; border-radius: 50%;
+            object-fit: cover; border: 15px solid #fff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .experience-badge {
+            position: absolute; bottom: 20px; right: 40px;
+            background: var(--accent); color: white; padding: 15px 25px;
+            border-radius: 50px; font-weight: 600; box-shadow: 0 10px 20px rgba(212, 163, 115, 0.3);
+        }
+
+        /* Social Proof Banner */
+        .social-proof {
+            background: #1e272e; color: white; padding: 40px 10%;
+            display: flex; justify-content: space-around; text-align: center;
+        }
+        .stat-box h2 { color: var(--accent); font-size: 2.2rem; }
+        .stat-box p { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8; }
+
+        /* Credentials Section */
+        .creds { padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .creds-text h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 20px; }
+        .qual-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .qual-item i { color: var(--accent); font-size: 1.5rem; }
+
+        /* Services */
+        .services { padding: 80px 10%; background: #f9f9f9; text-align: center; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
+        .card { background: #fff; padding: 40px; border-radius: 20px; transition: 0.4s; border-bottom: 4px solid transparent; }
+        .card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--accent); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 20px; }
+
+        /* Booking Button */
+        .btn {
+            background: var(--accent); color: white; padding: 16px 35px;
+            border-radius: 5px; text-decoration: none; font-weight: 600;
+            display: inline-block; transition: 0.3s;
+        }
+        .btn:hover { background: #b88a5d; transform: scale(1.05); }
+
+        /* Footer */
+        footer { background: #fff; padding: 60px 10%; border-top: 1px solid #eee; text-align: center; }
+        .social-links { margin: 25px 0; display: flex; justify-content: center; gap: 20px; }
+        .social-links a { color: #2d3436; font-size: 1.8rem; transition: 0.3s; }
+        .social-links a:hover { color: var(--accent); }
+
+        @media (max-width: 900px) {
+            .hero, .creds { flex-direction: column; text-align: center; padding: 60px 5%; }
+            .hero-text { padding: 0; margin-bottom: 50px; }
+            .profile-img { width: 300px; height: 300px; }
+            .creds { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DR. SHAILYA GUPTA</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#specialties">Treatments</a></li>
+            <li><a href="https://www.youtube.com/@ndoctorshailya">YouTube</a></li>
+            <li><a href="https://instagram.com/ndoctorshailya">Instagram</a></li>
+        </ul>
+        <a href="https://linktr.ee/doctorshailya" class="btn" style="padding: 10px 20px; font-size: 0.8rem;">BOOK ONLINE</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p style="color: var(--accent); font-weight: 600; letter-spacing: 2px;">DERMATOLOGIST & TRICHOLOGIST</p>
+            <h1>Skin & Hair Health Rooted in Science</h1>
+            <p>Dr. Shailya Gupta is a board-certified dermatologist dedicated to helping millions achieve healthy skin through evidence-based medical and aesthetic care.</p>
+            <a href="https://linktr.ee/doctorshailya" class="btn">BOOK A CONSULTATION</a>
+        </div>
+        <div class="hero-image">
+            <!-- Ensure your image file is named doctor_shailya.jpg -->
+            <img src="doc.jpg" alt="Dr. Shailya Gupta" class="profile-img">
+            <div class="experience-badge">8+ Years Exp.</div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="stat-box">
+            <h2>1.9M+</h2>
+            <p>Instagram Family</p>
+        </div>
+        <div class="stat-box">
+            <h2>400K+</h2>
+            <p>YouTube Subscribers</p>
+        </div>
+        <div class="stat-box">
+            <h2>950+</h2>
+            <p>Educational Guides</p>
+        </div>
+    </section>
+
+    <section class="creds" id="about">
+        <div class="creds-text">
+            <p style="color: #e67e22; font-weight: 600; margin-bottom: 10px;"><i class="fas fa-microphone"></i> TEDx SPEAKER</p>
+            <h2>Meet Your Doctor</h2>
+            <p>With an <strong>MBBS and MD in Dermatology</strong>, Dr. Shailya combines years of clinical expertise with a passion for public health education. Based in <strong>Pune</strong>, she serves patients both in-clinic and globally through digital consultations.</p>
+            <br>
+            <div class="qual-item">
+                <i class="fas fa-user-md"></i>
+                <p>MD – Dermatology, Venereology & Leprosy</p>
+            </div>
+            <div class="qual-item">
+                <i class="fas fa-graduation-cap"></i>
+                <p>MBBS - Manipal Academy of Higher Education</p>
+            </div>
+            <div class="qual-item">
+                <i class="fas fa-award"></i>
+                <p>Skin & Hair Specialist (Pimpri, Pune)</p>
+            </div>
+        </div>
+        <div style="background: var(--primary-bg); padding: 40px; border-radius: 20px;">
+            <h3 style="margin-bottom: 20px;">Patient Philosophy</h3>
+            <p>"Skincare is not just about vanity; it's about the health of the body's largest organ. My mission is to simplify dermatology and make science-backed routines accessible to everyone."</p>
+            <br>
+            <p><strong>- Dr. Shailya Gupta</strong></p>
+        </div>
+    </section>
+
+    <section class="services" id="specialties">
+        <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem;">Clinical Specialties</h2>
+        <div class="service-grid">
+            <div class="card">
+                <i class="fas fa-face-smile"></i>
+                <h3>Medical Skincare</h3>
+                <p>Specialized treatments for Acne, Pigmentation, Psoriasis, and Eczema.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-leaf"></i>
+                <h3>Hair Restoration</h3>
+                <p>Advanced therapies for Hair Fall, Thinning, and Scalp health management.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-wand-sparkles"></i>
+                <h3>Aesthetics</h3>
+                <p>Anti-aging solutions, Chemical Peels, and Glow-enhancing clinical procedures.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2 class="logo">Dr. Shailya Gupta</h2>
+        <p>Expert Dermatological Care | Pune, Maharashtra</p>
+        <div class="social-links">
+            <a href="https://instagram.com/ndoctorshailya"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@ndoctorshailya"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 30px;">© 2024 Dr. Shailya Gupta. All medical advice provided in-clinic or via consultation.</p>
+    </footer>
+
+</body>
+</html>
